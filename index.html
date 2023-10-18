@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/slider.js" defer></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="conteiner">
+      <header class="main-header">
+        <div class="layers">
+          <div class="layer__header">
+            <h1 class="layer__caption">Welcome to my site</h1>
+            <div class="layer__title">I am frontend developer</div>
+          </div>
+          <div class="layer layer__base" style="background-image: url(img/Background.png);"></div>
+          <div class="layer layer__middle" style="background-image: url(img/Layer_middle.png);"></div>
+          <div class="layer layer__front" style="background-image: url(img/Layer_front.png);"></div>
+        </div>
+      </header>
+    
+      <section class="main-article" style="background-image: url(img/dungeon.jpg);">
+        <div class="main-article__content">
+          <div class="main-article__slider">
+
+            <div class="main-article__slide active">
+              <div class="slide__caption">Introducing myself</div>
+                <p>Hi, my name is Dmitriy. I am 25 yaers old. <br>
+                  I'm looking for a junior-frontend developer position.<br>
+                  I'm complete tasks on time, like order and discipline, easy to communicate with. <br>
+                  I'll be happy to learn something new. Easily learn new technologies and remember information. 
+                  I hope to find a job in a friendly and close-knit team.</p>
+            </div>
+            
+            <div class="main-article__slide">
+              <div class="slide__caption">Hard skills</div>
+              <ul class="slide__list">
+                <li>HTML5 and CSS (grid and FlexBox, BEM, preprocessors SASS, SCSS)</li>
+                <li>JavaScript (ES6) - promise, fetch API</li>
+                <li>React (Hooks and props)</li>
+                <li>Git and GitHub</li>
+                <li>Figma, Adobe Photoshop</li>
+              </ul>
+                
+            </div>
+            <div class="main-article__slide">
+              <div class="slide__caption">Education</div>
+              <div class="slide__images">
+                <img src="img/logo-bmstu.png" alt="BMSTU" style="width: calc(var(--index) * 5); margin-right: 2em;">
+                <img src="img/logo_MMA.jpg" alt="MIA" style="width: calc(var(--index) * 10);">
+              </div>
+            </div>
+
+            <div class="main-article__slide">
+              <div class="slide__caption">Contacts</div>
+              <div class="media-contacts">
+                <div class="media-contact phone">
+                  <img src="img/whatsapp-logo.png" alt="whatsapp icon">
+                  <p><a href="tel:+79859585792">9859585792</a></p>
+                </div>
+                <div class="media-contact email">
+                  <img src="img/email-logo.png" alt="email icon">
+                  <p><a href="mailto:matveenkodyu@yandex.ru">matveenkodyu@yandex.ru</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <img src="img/arrow-prev.png" alt="" class="main-article__button prev-button">
+            <img src="img/arrow-next.png" alt="" class="main-article__button next-button">
+            
+          </div>
+        </div>
+        <div class="copy">© Dmitriy Matveenko</div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
