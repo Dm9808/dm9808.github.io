@@ -130,6 +130,9 @@ a {
 .slide__caption {
   position: absolute;
   top: calc(var(--index) * -2);
+  left: 0;
+  right: 0;
+  text-align: center;
   color: #fff;
   text-transform: uppercase;
   font-size: calc(var(--index) * 1);
